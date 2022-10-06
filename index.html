@@ -274,13 +274,50 @@
           <div id="consumptionMaxDaily" class="centered"></div>
           <p>© trackwatt.fr • Données : RTE.</p>
         </div>
-
+        
         <h1>Et bientôt...</h1>
         <div class="card">
           <h2>De nouvelles fonctionnalités arrivent</h2>
           <p>TrackWatt est en cours de construction, de nouvelles fonctionnalités arrivent bientôt dans le domaine de la consommation et production d'énergie. Pensez à revenir régulièrement !</p>
           <button type="button" onclick="location.href='https://twitter.com/trackwatt_'">S'abonner à @TrackWatt</button>
           <button type="button" onclick="location.href='https://twitter.com/guillaumerozier'">S'abonner à @GuillaumeRozier</button>
+        </div>
+        
+        <div class="card">
+          <h2>Restez au courant</h2>
+          <p>Inscrivez-vous à notre newsletter pour être au courant des dernières actualités. </p>
+          <script type="text/javascript" src="https://forms.sbc29.com/form.js"></script>
+
+          <form id="sb_form"
+  onsubmit="process2(
+    'https://services.sarbacane.com/core/v1/forms/contacts/upsert?listID&#x3D;J94TlFAvROKkwUfKmHXLGA&amp;formID&#x3D;PEjPQ4YcQm2VoVmIO9FHTA&amp;timezone&#x3D;Europe/Paris', 'https://forms.sbc29.com/', '6082c53011ce622915192ec7', 'false', 'message',
+    '', 'https://services.sarbacane.com/core/v1/transactional/sendmessage/optin', 'Inscription prise en compte', 'Vous recevrez prochainement notre newsletter.',
+    'Vous allez recevoir un email', 'Vous devrez cliquer sur le lien de confirmation pour valider votre inscription', 'Erreur',
+    'Une erreur inattendue s%27est produite.', 'Le formulaire est en cours d%27édition, veuillez patienter quelques minutes avant d%27essayer à nouveau.', '',
+    '', ''
+  );
+  return false;"
+  method="post">
+  <label id="form-header-title">Inscrivez-vous à la newsletter</label>
+
+  <span style="display: flex;flex-direction: row;">
+    <label id="label-FIRSTNAME_ID">Pr&eacute;nom</label>
+  </span>
+  <input id="input-FIRSTNAME_ID" type="text" name="FIRSTNAME_ID"  sb-form-input>
+  
+  <span style="display: flex;flex-direction: row;">
+    <label id="label-EMAIL_ID">Adresse e-mail</label>
+    <div id="form-mandatory">*</div>
+  </span>
+  <input id="input-email" type="email" name="email" required="true" sb-form-input>
+  <div id="div-submitInput" align="center">
+    <button id="submitInput" type="submit" value="S&#x27;INSCRIRE" class="mobile-FW" ><span style="margin:0;">S'INSCRIRE</span>
+</button>
+    <div class="loader" style="display:none"></div>
+</div>
+  <label id="form-footer-mandatory">* Champs obligatoires.</label>
+</form>
+
         </div>
 
         <h2 id="APropos">À propos</h2>
